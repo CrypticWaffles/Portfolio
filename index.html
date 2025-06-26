@@ -1,389 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miles Griffith | Portfolio</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+<head>
+  <!-- Global Metadata -->  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles Griffith | Interface</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
     <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="manifest" href="./site.webmanifest">
-    <style>
-      /* Smooth scrolling for anchor links */
-      html { scroll-behavior: smooth; }
-      /* Section padding for visual separation */
-      section { padding: 60px 0; }
-      /* Margin for badges */
-      .badge { margin: 0.2rem; }
-      /* Ensure iframes fill their container */
-      iframe { width: 100%; height: 600px; border: none; }
-      /* Custom styling for project cards to ensure consistent height */
-      .card-body {
-        display: flex;
-        flex-direction: column;
-      }
-      .card-body .mt-auto {
-        margin-top: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#top">Miles Griffith</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#current-work">Current Work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-primary-bg text-primary-text">
+  <!-- Loading Overlay -->  
+  <div id="loading-overlay">
+      <div class="loading-text">LOADING // INTERFACE...</div>
+      <div class="loading-bar">
+          <div class="loading-progress"></div>
+      </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="hidden opacity-0 transition-opacity duration-500">
+    <!-- Navigation -->  
+    <nav class="fixed top-0 left-0 h-screen w-64 bg-gray-900 border-r border-accent-purple py-8 px-4 z-50 hidden lg:block">
+          <div class="flex flex-col items-center mb-8">
+              <img src="./img/Miles.png" alt="Miles Griffith" class="rounded-full w-24 h-24 border-2 border-accent-purple mb-2">
+              <h2 class="text-xl text-accent-purple font-mono glitch-hover">MILES GRIFFITH</h2>
+              <p class="text-sm text-gray-400 font-mono">ALIAS: CRYPTICWAFFLES</p>
+          </div>
+          <!-- Navigation Links -->
+          <ul class="space-y-4">
+              <li><a href="#about" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">ABOUT_ME</span>
+              </a></li>
+              <li><a href="#skills" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">SKILL_MATRIX</span>
+              </a></li>
+              <li><a href="#current-work" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">ACTIVE_PROJECTS</span>
+              </a></li>
+              <li><a href="#education" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">EDUCATION_LOG</span>
+              </a></li>
+              <li><a href="#experience" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">WORK_HISTORY</span>
+              </a></li>
+              <li><a href="#projects" class="block text-primary-text transition-colors duration-200 font-mono text-lg py-2 px-3 relative group nav-item-hover">
+                  <span class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-5 bg-accent-purple opacity-0 nav-line transition-opacity duration-200"></span>
+                  <span class="ml-2 nav-text glitch-hover">PROJECT_MODULES</span>
+              </a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- header -->
-    <header id="top" class="bg-light text-center py-5">
-      <div class="container">
-        <img src="./img/Miles.png" alt="Miles Griffith" class="rounded-circle img-fluid mb-3" style="max-width: 150px;">
-        <h1 class="display-5">Hi, I'm Miles!</h1>
-        <p class="lead">Software Developer building real-world solutions with code.</p>
-        <a href="./doc/Miles_Griffith.pdf" class="btn btn-success btn-lg" download>📄 Download Resume</a>
-      </div>
-    </header>
-
-    <!-- Body content -->
-    <section id="about">
-      <div class="container">
-        <h2 class="text-center mb-4">About Me</h2>
-        <p>A Software Developer with an Associate’s Degree in Software Development and pursuing a Bachelor’s in the field. Strong foundational knowledge in programming concepts, software engineering principles, and development methodologies gained through academic coursework. I am actively seeking opportunities to apply my skills, contribute to innovative projects, and grow within a professional development environment.</p>
-      </div>
-    </section>
-
-    <!-- Technical Skills -->
-    <section id="skills" class="bg-light">
-      <div class="container text-center">
-        <h2 class="mb-4">Technical Skills</h2>
-        <h4 class="mt-4">Languages</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-          <span class="badge bg-primary rounded-pill p-2">C#</span>
-          <span class="badge bg-primary rounded-pill p-2">Java</span>
-          <span class="badge bg-primary rounded-pill p-2">JavaScript</span>
-          <span class="badge bg-primary rounded-pill p-2">Python</span>
-          <span class="badge bg-primary rounded-pill p-2">Kotlin</span>
-          <span class="badge bg-primary rounded-pill p-2">HTML</span>
-          <span class="badge bg-primary rounded-pill p-2">CSS</span>
-          <span class="badge bg-primary rounded-pill p-2">SQL</span>
-        </div>
-        <h4 class="mt-4">Frameworks & Tools</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-          <span class="badge bg-primary rounded-pill p-2">Bootstrap</span>
-          <span class="badge bg-primary rounded-pill p-2">Sails.js</span>
-          <span class="badge bg-primary rounded-pill p-2">Node.js</span>
-          <span class="badge bg-primary rounded-pill p-2">PostgreSQL</span>
-          <span class="badge bg-primary rounded-pill p-2">Git</span>
-          <span class="badge bg-primary rounded-pill p-2">GitHub</span>
-          <span class="badge bg-primary rounded-pill p-2">Visual Studio</span>
-          <span class="badge bg-primary rounded-pill p-2">Visual Studio Code</span>
-          <span class="badge bg-primary rounded-pill p-2">MongoDB</span>
-          <span class="badge bg-primary rounded-pill p-2">Nginx</span>
-          <span class="badge bg-primary rounded-pill p-2">Google Cloud</span>
-          <span class="badge bg-primary rounded-pill p-2">Expo</span>
-          <span class="badge bg-primary rounded-pill p-2">SQLite</span>
-          <span class="badge bg-primary rounded-pill p-2">React Native</span>
-          <span class="badge bg-primary rounded-pill p-2">Firebase</span>
-        </div>
-        <h4 class="mt-4">Soft Skills</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-2">
-          <span class="badge bg-primary rounded-pill p-2">Teamwork</span>
-          <span class="badge bg-primary rounded-pill p-2">Problem Solving</span>
-          <span class="badge bg-primary rounded-pill p-2">Communication</span>
-          <span class="badge bg-primary rounded-pill p-2">Adaptability</span>
-          <span class="badge bg-primary rounded-pill p-2">Time Management</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Current Work -->
-    <section id="current-work">
-      <div class="container text-center">
-        <h2 class="mb-4">What I’m Working On</h2>
-        <p>Currently working in a group of my fellow students to develop a mobile app that uses geolocation and AI to support mutual aid in local communities. This project involves React Native, Node.js, Express.js, and MongoDB, providing valuable experience in full-stack mobile application development. I am also continuously refining my Kotlin skills through hands-on projects to deepen my expertise in Android development.</p>
-      </div>
-    </section>
-
-    <!-- Quick Stats -->
-    <section class="bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Quick Stats</h2>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <h2>4+</h2>
-            <p>Years of Coding</p>
+          <div class="absolute bottom-8 left-0 w-full text-center text-gray-500 text-xs font-mono">
+              <p>&copy; 2025 Miles Griffith</p>
           </div>
-          <div class="col-md-4">
-            <h2>4+</h2>
-            <p>Projects Completed</p>
+      </nav>
+      <!-- Mobile Navigation -->
+      <nav class="bg-gray-900 border-b border-accent-purple p-4 lg:hidden sticky top-0 z-40">
+          <div class="container mx-auto flex justify-between items-center">
+              <a class="text-accent-purple text-xl font-mono" href="#top">MILES GRIFFITH</a>
+              <button id="mobile-menu-button" class="text-accent-purple focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </button>
           </div>
-          <div class="col-md-4">
-            <h2>3</h2>
-            <p>Languages Mastered</p>
+          <!-- Mobile Navigation Links -->
+          <div id="mobile-menu" class="hidden mt-4 space-y-2">
+              <a href="#about" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">ABOUT_ME</a>
+              <a href="#skills" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">SKILL_MATRIX</a>
+              <a href="#current-work" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">ACTIVE_PROJECTS</a>
+              <a href="#education" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">EDUCATION_LOG</a>
+              <a href="#experience" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">WORK_HISTORY</a>
+              <a href="#projects" class="block text-primary-text hover:text-accent-purple transition-colors duration-200 font-mono text-lg py-2 px-3">PROJECT_MODULES</a>
           </div>
-        </div>
-      </div>
-    </section>
+      </nav>
+      <!-- Main Content Area -->
+      <div class="lg:ml-48 p-8">
+        <!-- Header Section -->
+        <header id="top" class="text-center py-20 min-h-screen flex flex-col justify-center items-center relative overflow-hidden">
+          <!-- Background Grid -->  
+          <div class="absolute inset-0 z-0 opacity-10">
+            <div class="grid grid-cols-10 h-full w-full">
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1 border-r border-gray-700"></div>
+              <div class="col-span-1"></div>
+            </div>
+            <div class="absolute inset-0 grid grid-rows-10 h-full w-full">
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1 border-b border-gray-700"></div>
+              <div class="row-span-1"></div>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="relative z-10 p-8 nier-card max-w-2xl mx-auto">
+            <div class="relative inline-block border-2 border-accent-purple p-1 mb-4">
+              <img src="./img/Miles.png" alt="Miles Griffith" class="w-32 h-32 object-cover">
+            </div>
+            <h1 class="text-5xl font-bold text-accent-purple mb-4 leading-tight glitch-hover">MILES GRIFFITH</h1>
+            <p class="text-xl text-primary-text font-mono mb-6">SOFTWARE DEVELOPER // Building Real-World Solutions.</p>
+            <a href="./doc/Miles_Griffith.pdf" download class="btn-nier glitch-hover">
+               DOWNLOAD // RESUME.PDF
+            </a>
+          </div>
+        </header>
 
-    <!-- Education -->
-      <section id="education" class="mb-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Education</h2>
-          <div class="row">
-            <div class="col-lg-12">
-              <p>
-                <span class="fw-bold">Bachelors in Applied Science, Software Development, Bellevue College</span><br>
-                <em>Jan. 2025 - Mar. 2027 | Bellevue, WA</em><br>
-              </p>
-              <p>
-                <span class="fw-bold">Associate in Applied Science, Software Development, Bellevue College</span><br>
-                <em>Sept. 2022 - Dec. 2024 | Bellevue, WA</em><br>
-                <em>Received with Honors</em><br>
-              </p>
-              <div class="mb-4">
-                <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#associatesCollapse" aria-expanded="false" aria-controls="associatesCollapse">Toggle Associate’s Diploma</button>
-                <div id="associatesCollapse" class="collapse mt-3">
-                  <iframe src="./doc/AAST-Diploma.pdf" title="Associate's Diploma"></iframe>
-                </div>
+        <div class="section-divider"></div>
+
+        <!-- About Section -->
+        <section id="about" class="py-16">
+          <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">ABOUT ME</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="nier-card">
+              <p class="text-accent-purple text-sm mb-2 uppercase font-mono">PROFESSIONAL OVERVIEW</p>
+              <p class="text-lg">I'm a Software Developer holding an Associate's Degree in Software Development, and I'm currently advancing my education towards a Bachelor's degree in the same field. My academic journey has provided me with a strong foundational knowledge in programming concepts, software engineering principles, and various development methodologies.</p>
+            </div>
+            <div class="nier-card">
+              <p class="text-accent-purple text-sm mb-2 uppercase font-mono">CAREER OBJECTIVES</p>
+              <p class="text-lg">I'm actively seeking opportunities to gain hands-on experience, collaborate on innovative projects, and grow as a developer within a professional environment. My goal is to apply my skills to real-world challenges and continue learning from experienced teams.</p>
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section -->
+        <div class="section-divider"></div>
+        <section id="skills" class="py-16">
+          <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">SKILL MATRIX</h2>
+          <div class="nier-card max-w-5xl mx-auto">
+            <!-- Languages -->
+            <h3 class="text-2xl text-accent-purple mb-6 font-mono">LANGUAGES</h3>
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">C#</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Java</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                 <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">JavaScript</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Python</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Kotlin</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">HTML</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">CSS</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">SQL</span> 
               </div>
             </div>
-            <div class="col-lg-12">
-              <h4 class="mb-3">Relevant Coursework</h4>
-              <ul>
-                <li><span class="fw-bold">Programming & Software Development: </span>
-                  DEV108: Intro to Python Programming, DEV110: Intro to C# Programming, DEV120: Object‐Oriented Programming
-                </li>
-                <li><span class="fw-bold">Web Development: </span>
-                  DEV109: Intro to Web Development, DEV123: Server‐Side Web Development, DEV209: Client‐Side Web Programming, DEV320: Advanced Web Development
-                </li>
-                <li><span class="fw-bold">Database & Systems: </span>
-                  BUSIT103: SQL Fundamentals, DEV140: Database Theory & SQL Programming, DEV160: Systems Analysis & Design, DEV310: Enterprise Data Applications, DEV420: Advanced Data Access Techniques
-                </li>
-                <li><span class="fw-bold">Networking & IT: </span>
-                  IT103: Networking Basics, IT223: Using and Supporting Linux
-                </li>
-                <li><span class="fw-bold">Mobile Development: </span>
-                  DEV272: Implementing Mobile Solutions, DEV320: Developing Mobile Applications
-                </li>
-                <li><span class="fw-bold">Technical Communication, Critical Thinking, & Business: </span>
-                  ENGL&235: Technical Writing, CMST250: Communication in a Diverse Workplace, BUS&101: Introduction to Business, DEV300: Problem Solving Strategies
-                </li>
+            <!-- Frameworks & Tools -->
+            <h3 class="text-2xl text-accent-purple mb-6 font-mono">FRAMEWORKS & TOOLS</h3>
+            <div class="flex flex-wrap justify-center gap-4 mb-10">
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Bootstrap</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Tailwindcss</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Sails.js</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Node.js</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">PostgreSQL</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Git</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">GitHub</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Visual Studio</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Visual Studio Code</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">MongoDB</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Nginx</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Google Cloud</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Expo</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">SQLite</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">React Native</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Firebase</span>
+              </div>
+            </div>
+            <!-- Soft Skills -->
+            <h3 class="text-2xl text-accent-purple mb-6 font-mono">SOFT SKILLS</h3>
+            <div class="flex flex-wrap justify-center gap-4">
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm soft-skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Teamwork</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm soft-skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Problem Solving</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm soft-skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Communication</span>
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm soft-skill-item">
+                 <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Adaptability</span> 
+              </div>
+              <div class="relative group cursor-pointer p-3 border border-gray-700 transition-colors duration-200 rounded-sm soft-skill-item">
+                <span class="text-primary-text transition-colors duration-200 font-mono text-lg skill-text">Time Management</span> 
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Current Work Section -->
+        <section id="current-work" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">ACTIVE PROJECTS</h2>
+            <div class="nier-card max-w-4xl mx-auto text-center">
+                <p class="text-accent-purple text-sm mb-4 uppercase font-mono">ONGOING DEVELOPMENT LOG</p>
+                <p class="text-lg mb-4">To be updated</p>
+                <div class="w-full bg-gray-700 rounded-full h-2.5 mt-6 relative overflow-hidden">
+                    <div class="bg-secondary-accent-green h-2.5 rounded-full w-0 animate-pulse-short"></div>
+                    <span class="absolute right-2 top-1/2 -translate-y-1/2 text-xs font-mono text-gray-300">PROGRESS: 0%</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Quick Stats Section -->
+        <section id="quick-stats" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">PERFORMANCE METRICS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">
+                <div class="nier-card flex flex-col items-center">
+                    <span class="text-6xl font-mono text-accent-purple mb-2 glitch-hover">4+</span>
+                    <p class="text-lg font-mono">YEARS CODING</p>
+                </div>
+                <div class="nier-card flex flex-col items-center">
+                    <span class="text-6xl font-mono text-accent-purple mb-2 glitch-hover">4+</span>
+                    <p class="text-lg font-mono">PROJECTS COMPLETED</p>
+                </div>
+                <div class="nier-card flex flex-col items-center">
+                    <span class="text-6xl font-mono text-accent-purple mb-2 glitch-hover">3</span>
+                    <p class="text-lg font-mono">LANGUAGES MASTERED</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16">
+          <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">EDUCATION LOG</h2>
+          <div class="nier-card max-w-4xl mx-auto">
+            <div class="mb-8 border-b border-gray-700 pb-6">
+              <h3 class="text-2xl text-accent-purple font-mono mb-2">Bachelors in Applied Science, Software Development </h3>
+              <p class="text-lg text-gray-300">Bellevue College | Jan. 2025 - Mar. 2027 (Expected) | Bellevue, WA </p>
+            </div>
+            <div class="mb-8 border-b border-gray-700 pb-6">
+              <h3 class="text-2xl text-accent-purple font-mono mb-2">Associate in Applied Science, Software Development </h3>
+              <p class="text-lg text-gray-300">Bellevue College | Sept. 2022 - Dec. 2024 | Bellevue, WA </p>
+              <p class="text-lg text-secondary-accent-green">Received with Honors </p>
+              <button id="toggle-diploma" class="btn-nier mt-4 glitch-hover">
+                 VIEW_FILE // ASSOCIATES_DIPLOMA.PDF
+              </button>
+              <div id="diploma-viewer" class="data-viewer hidden">
+                <iframe src="./doc/AAST-Diploma.pdf" title="Associate's Diploma"></iframe>
+              </div>
+            </div>
+            <h3 class="text-2xl text-accent-purple font-mono mb-4">RELEVANT COURSEWORK</h3>
+            <ul class="list-disc list-inside space-y-3 text-lg">
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Programming & Software Development:</span> Intro to Python Programming, Intro to C# Programming, Object-Oriented Programming 
+              </li>
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Web Development:</span> Intro to Web Development, Client-Side Web Programming, Server-Side Web Development, Advanced Web Development 
+              </li>
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Database & Systems:</span> SQL Fundamentals, Database Theory & SQL Programming, Systems Analysis & Design, Enterprise Data Applications, Advanced Data Access Techniques 
+              </li>
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Networking & IT:</span> Networking Basics, Using and Supporting Linux 
+              </li>
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Mobile Development:</span> Implementing Mobile Solutions, Developing Mobile Applications 
+              </li>
+              <li class="font-mono">
+                <span class="text-secondary-accent-cyan">Technical Communication, Critical Thinking, & Business:</span> Technical Writing, Communication in a Diverse Workplace, Introduction to Business, Problem Solving Strategies 
+              </li>
+            </ul>
+            <p class="text-sm text-gray-500 mt-6 font-mono">ACCESS_EXTERNAL // Official Bellevue College Course Catalog for more details.</p>
+            <a href="https://catalog.bellevuecollege.edu" target="_blank" class="btn-nier-secondary mt-4 glitch-hover">
+                BC COURSE CATALOG
+            </a>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16">
+          <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">WORK HISTORY</h2>
+          <div class="nier-card max-w-4xl mx-auto">
+            <div class="mb-8 border-b border-gray-700 pb-6">
+              <h3 class="text-2xl text-accent-purple font-mono mb-2">In-Store Shopping Lead, Safeway Inc.</h3>
+              <p class="text-lg text-gray-300">Sept. 2023 - Sept. 2024 | Issaquah, WA </p>
+              <p class="mt-4 text-lg">I led the in-store shopping team by supervising daily operations, providing mentorship, and ensuring timely and accurate order fulfillment.I effectively managed workflows, addressed operational challenges, and collaborated with cross-functional teams to support overall store efficiency and deliver excellent customer service.</p>
+              <ul class="list-disc list-inside space-y-2 mt-4 text-primary-text">
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Supervised & Guided In-Store Shoppers:</span> Provided training, mentorship, and performance feedback to ensure accuracy, efficiency, and exceptional customer service in order fulfillment. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Managed Workflow & Order Prioritization:</span> Oversaw daily operations of the in-store shopping department, ensuring timely completion of online orders while maintaining high standards of product selection and packaging.</li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Strong Problem-Solving & Decision-Making:</span> Addressed operational challenges, handled escalations, and adapted to changing customer needs with quick and effective solutions. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Collaboration & Cross-Functional Support:</span> Worked closely with store leadership and various departments to optimize efficiency and support overall store operations. </li>
               </ul>
-              <p>Additional Information and details on each class are available on the Official Bellevue College Course Catalog.</p>
-              <a href="https://catalog.bellevuecollege.edu" class="btn btn-outline-primary" target="_blank">BC Course Catalog</a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section id="experience" class="bg-light">
-        <div class="container">
-          <h2 class="text-center mb-4">Experience</h2>
-          <div class="row">
-            <div class="col-md-12">
-              <p>
-                <span class="fw-bold">In-Store Shopping Lead, Safeway Inc.</span><br>
-                <em>Sept. 2023 - Sept. 2024 | Issaquah, WA</em><br>
-                Led the in-store shopping team by supervising daily operations, providing mentorship, and ensuring timely and accurate order fulfillment.
-                Effectively managed workflows, addressed operational challenges, and collaborated with cross-functional teams to support overall store efficiency and deliver excellent customer service.
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Supervised & Guided In‐Store Shoppers –</span> Provided training, mentorship, and performance feedback to ensure accuracy, efficiency, and exceptional customer service in order fulfillment.
-                </li>
-                <li>
-                  <span class="fw-bold">Managed Workflow & Order Prioritization –</span> Oversaw daily operations of the in‐store shopping department, ensuring timely completion of online orders while maintaining high standards of product selection and packaging.
-                </li>
-                <li>
-                  <span class="fw-bold">Strong Problem‐Solving & Decision‐Making –</span> Addressed operational challenges, handled escalations, and adapted to changing customer needs with quick and effective solutions.
-                </li>
-                <li>
-                  <span class="fw-bold">Collaboration & Cross‐Functional Support –</span> Worked closely with store leadership and various departments to optimize efficiency & support overall store operations.
-                </li>
-              </ul>
-              <p>
-                <span class="fw-bold">In-Store Shopper, Safeway Inc.</span><br>
-                <em>Jan. 2023 - Sept. 2023 | Issaquah, WA</em><br>
-                Accurately fulfilled online grocery orders with a focus on quality, freshness, and proper packaging.
-                Provided friendly and knowledgeable customer service by assisting shoppers, locating products, and offering tailored recommendations to improve the overall shopping experience.
-              </p>
-              <ul>
-                <li>
-                  <span class="fw-bold">Fulfilled Online Grocery Orders –</span> Carefully selected high‐quality grocery items for online customers, ensuring accuracy, freshness, and proper packaging to maintain product integrity.
-                </li>
-                <li>
-                  <span class="fw-bold">Provided Exceptional Customer Service –</span> Assisted both online and in‐store customers by answering questions, locating products, and offering
-                  recommendations to enhance the shopping experience.
-                </li>
-                <li>
-                  <span class="fw-bold">Time Management & Multitasking –</span> Managed multiple tasks and priorities in a high‐volume retail environment while maintaining accuracy and
-                  efficiency.
-                </li>
-                <li>
-                  <span class="fw-bold">Problem‐Solving & Adaptability –</span> Quickly determined suitable substitutions for unavailable items, maintaining high customer satisfaction.
-                </li>
-                <li>
-                  <span class="fw-bold">Flexibility & Teamwork –</span> Willingly assisted in different store departments and adapted to changing needs to support overall store operations.
-                </li>
+            <div class="mb-8">
+              <h3 class="text-2xl text-accent-purple font-mono mb-2">In-Store Shopper, Safeway Inc.</h3>
+              <p class="text-lg text-gray-300">Jan. 2023 - Sept. 2023 | Issaquah, WA</p>
+              <p class="mt-4 text-lg">I accurately fulfilled online grocery orders with a focus on quality, freshness, and proper packaging.I provided friendly and knowledgeable customer service by assisting shoppers, locating products, and offering tailored recommendations to improve the overall shopping experience.</p>
+              <ul class="list-disc list-inside space-y-2 mt-4 text-primary-text">
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Fulfilled Online Grocery Orders:</span> Carefully selected high-quality grocery items for online customers, ensuring accuracy, freshness, and proper packaging to maintain product integrity. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Provided Exceptional Customer Service:</span> Assisted both online and in-store customers by answering questions, locating products, and offering recommendations to enhance the shopping experience. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Time Management & Multitasking:</span> Managed multiple tasks and priorities in a high-volume retail environment while maintaining accuracy and efficiency. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Problem-Solving & Adaptability:</span> Quickly determined suitable substitutions for unavailable items, maintaining high customer satisfaction. </li>
+                <li class="font-mono"><span class="text-secondary-accent-cyan">Flexibility & Teamwork:</span> Willingly assisted in different store departments and adapted to changing needs to support overall store operations. </li>
               </ul>
             </div>
-            <div class="col-md-12 mt-4">
-              <h3 class="mb-3">Resume</h3>
-              <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#resumeCollapse" aria-expanded="false" aria-controls="resumeCollapse">Toggle Resume</button>
-              <div id="resumeCollapse" class="collapse mt-3">
-                <iframe src="./doc/Miles_Griffith.pdf" title="Miles Griffith's Resume"></iframe>
+            <button id="toggle-resume" class="btn-nier mt-4 glitch-hover">
+              VIEW_FILE // MILES_GRIFFITH_RESUME.PDF
+            </button>
+            <div id="resume-viewer" class="data-viewer hidden">
+              <iframe src="./doc/Miles_Griffith.pdf" title="Miles Griffith's Resume"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+          <h2 class="text-4xl font-bold text-center mb-12 text-accent-purple font-mono glitch-hover">PROJECT MODULES</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="nier-card flex flex-col">
+              <h3 class="text-2xl text-accent-purple font-mono mb-3">NEIGHBORHOOD NET</h3>
+              <hr class="border-gray-700 mb-4">
+              <p class="mb-4">NeighborhoodNet is a platform that enables residents to report and track issues in their neighborhood, such as infrastructure problems, safety concerns, or community events. The application connects to a backend server to store and retrieve data, allowing for real-time updates and community engagement. </p>
+              <p class="mb-4 text-gray-400 font-mono text-sm">NOTE: This group project is currently under active development, and its repositories are private due to sensitive access keys.</p>
+              <p class="mb-4">Building this project significantly expanded my understanding of the React Native framework for cross-platform mobile applications. I also gained practical experience with Expo for mobile app development and deployment, and deepened my knowledge of MongoDB and Mongoose for backend server development.</p>
+              <hr class="border-gray-700 my-4">
+              <p class="text-sm text-gray-400 font-mono mt-auto">BUILT WITH: React, React Native, Expo, Node.js, Express.js, MongoDB, Mongoose, Multer, Swagger, & CORS</p>
+            </div>
+            <div class="nier-card flex flex-col">
+              <h3 class="text-2xl text-accent-purple font-mono mb-3">E-VOTER</h3>
+              <hr class="border-gray-700 mb-4">
+              <p class="mb-4">E-Voter is a project concept website built with Sails.js, Bootstrap, and a PostgreSQL database. It was originally hosted in a Google Virtual Machine running Nginx, but it's not currently live.</p>
+              <p class="mb-4">As the lead developer in a group of four, I was responsible for both frontend and backend development, from initial design to deployment. My key responsibilities included database design and implementation (PostgreSQL) and API development. I also contributed to the frontend, using Bootstrap to create a responsive and user-friendly interface.</p>
+              <p class="mb-4">This project greatly enhanced my understanding of the Sails.js framework for full-stack web applications. I gained practical experience with PostgreSQL and Nginx, and learned about deploying web applications on a virtual machine. This was a valuable opportunity to apply my skills to an original concept.</p>
+              <hr class="border-gray-700 my-4">
+              <p class="text-sm text-gray-400 font-mono mt-auto">BUILT WITH: Sails.js, Bootstrap, PostgreSQL, & Nginx</p>
+              <div class="mt-4">
+                <a href="https://github.com/CrypticWaffles/TheMiddlesRepo" target="_blank" class="btn-nier-secondary glitch-hover">
+                  VIEW_REPO // GITHUB
+                </a>
+              </div>
+            </div>
+            <div class="nier-card flex flex-col">
+              <h3 class="text-2xl text-accent-purple font-mono mb-3">PORTFOLIO SITE</h3>
+              <hr class="border-gray-700 mb-4">
+              <p class="mb-4">This is a basic portfolio website built with HTML, CSS, JavaScript, and tailwindcss. It's hosted using GitHub Pages with a custom domain configured via <a href="https://www.noip.com/" style="text-decoration: none;" target="_blank" class="text-accent-purple hover:underline">NoIP</a>. Its primary purpose is to showcase my work and skills as a software developer.</p>
+              <p class="mb-4">As a personal project, I took on all aspects, from initial design to deployment and ongoing maintenance. I continuously update and improve this site to reflect my evolving knowledge and abilities in software development.</p>
+              <p class="mb-4">Building this site provided practical experience in website hosting, including utilizing GitHub Pages for static site deployment. I gained insights into domain name acquisition and DNS server setup through NoIP. Furthermore, it reinforced my understanding of HTML, CSS, and JavaScript for creating responsive web designs.</p>
+                <hr class="border-gray-700 my-4">
+                <p class="text-sm text-gray-400 font-mono mt-auto">BUILT WITH: HTML, CSS, JavaScript, & Bootstrap</p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://github.com/CrypticWaffles/Portfolio" target="_blank" class="btn-nier-secondary glitch-hover">
+                    VIEW_REPO // GITHUB
+                  </a>
+                  <a href="http://mbgriffi.ddns.net/" target="_blank" class="btn-nier-secondary glitch-hover">
+                    LAUNCH_DEMO // LIVE
+                  </a>
+                </div>
+            </div>
+            <div class="nier-card flex flex-col">
+              <h3 class="text-2xl text-accent-purple font-mono mb-3">SHOWLIST</h3>
+              <hr class="border-gray-700 mb-4">
+              <p class="mb-4">ShowList is a Java-based Android movie tracking application designed to help users keep track of their favorite films. I developed this project as a practice exercise in Android development, using SQLite for local data storage.</p>
+              <p class="mb-4">This was an individual school project focused on learning Android development. I was responsible for all phases, from conceptualization and design to implementation. I chose to build a movie tracking app to explore mobile development concepts. This project isn't currently under active development, but I may revisit it in the future.</p>
+              <p class="mb-4">Through this project, I gained significant experience with the Android framework and its components for building mobile applications. I also acquired practical skills in working with SQLite for local database management on Android devices.</p>
+              <hr class="border-gray-700 my-4">
+              <p class="text-sm text-gray-400 font-mono mt-auto">BUILT WITH: Java, SQLite, Android Studio, & XML</p>
+              <div class="mt-4">
+                <a href="https://github.com/CrypticWaffles/ShowList" target="_blank" class="btn-nier-secondary glitch-hover">
+                  VIEW_REPO // GITHUB
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects -->
-      <section id="projects" class="py-5">
-        <div class="container">
-          <h2 class="text-center mb-4">Projects</h2>
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 shadow-sm rounded-lg">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title text-primary">Neighborhood Net</h5>
-                  <hr>
-                  <p class="card-text">
-                    NeighborhoodNet is a platform that enables residents to report and track issues in their neighborhood, such as infrastructure problems, safety concerns, or community events.
-                    The application connects to a backend server to store and retrieve data, allowing for real-time updates and community engagement.
-                  </p>
-                  <p class="card-text">
-                    This project is currently in active development with a group of fellow students. The repositories are private as we are working with sensitive access keys.
-                  </p>
-                  <p class="card-text">
-                    So far, building this project has taught me a lot about the React Native framework and how to use it to build cross-platform mobile applications.
-                    I have also gained experience in working with Expo for mobile app development and deployment, and deepened my understanding of MongoDB and Mongoose for backend server development.
-                  </p>
-                  <hr>
-                  <p class="card-text"><small class="text-muted">
-                    Built with: React, React Native, Expo, Node.js, Express.js, MongoDB, Mongoose, Multer, Swagger, & CORS
-                  </small></p>
-                  <!--
-                  <div class="mt-auto">
-                    <a href="https://github.com/CodeBloodedSP25/Neighborhood-Net" class="btn btn-outline-primary btn-sm" target="_blank">Frontend GitHub</a>
-                    <a href="https://github.com/CodeBloodedSP25/NeighborhoodNetServer" class="btn btn-outline-primary btn-sm" target="_blank">Backend GitHub</a>
-                  </div>
-                  -->
-                </div>
-              </div>
-            </div>
+        <div class="section-divider"></div>
 
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 shadow-sm rounded-lg">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title text-primary">E-Voter</h5>
-                  <hr>
-                  <p class="card-text">
-                    A project concept web site built with Sails.js, Bootstrap, and a PostgreSQL database. Originally hosted in a Google Virtual Machine running Nginx, it is not currently live.
-                  </p>
-                  <p class="card-text">
-                    As the lead developer in a group of four, I was responsible for both frontend and backend development, from initial design to deployment.
-                    My key responsibilities included database design and implementation (PostgreSQL), as well as API development.
-                    I also contributed to the frontend, using Bootstrap to create a responsive and user-friendly interface.
-                  </p>
-                  <p class="card-text">
-                    This project significantly enhanced my understanding of the Sails.js framework for full-stack web applications. I gained practical experience with PostgreSQL and Nginx, and learned about deploying web applications on a virtual machine. This was a valuable opportunity to apply my skills to an original concept.
-                  </p>
-                  <hr>
-                  <p class="card-text"><small class="text-muted">Built with: Sails.js, Bootstrap, PostgreSQL, & Nginx</small></p>
-                  <div class="mt-auto">
-                    <a href="https://github.com/CrypticWaffles/TheMiddlesRepo" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 shadow-sm rounded-lg">
-                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-primary">Portfolio Site</h5>
-                    <hr>
-                    <p class="card-text">
-                      This is a basic portfolio website built with HTML, CSS, JavaScript, and Bootstrap.
-                      It is hosted using GitHub Pages and a custom domain configured with <a href="https://www.noip.com/" style="text-decoration: none;" target="_blank">NoIP</a>.
-                      The primary purpose of this project is to showcase my work and skills as a software developer.
-                    </p>
-                    <p class="card-text">
-                      As a personal project, I was responsible for all aspects, from initial design to deployment and ongoing maintenance.
-                      I continuously update and improve this site to reflect my evolving knowledge and abilities in software development.
-                    </p>
-                    <p class="card-text">
-                      Building this site provided practical experience in website hosting, including utilizing GitHub Pages for static site deployment. I gained insights into domain name acquisition and DNS server setup through NoIP. Furthermore, it reinforced my understanding of HTML, CSS, and JavaScript for creating responsive web designs.
-                    </p>
-                    <hr>
-                    <p class="card-text"><small class="text-muted">
-                      Built with: HTML, CSS, JavaScript, & Bootstrap
-                    </small></p>
-                    <div class="mt-auto">
-                      <a href="https://github.com/CrypticWaffles/Portfolio" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
-                      <a href="http://mbgriffi.ddns.net/" class="btn btn-outline-secondary btn-sm" target="_blank">Live Demo</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            <div class="col-md-6 col-lg-4 mb-4">
-              <div class="card h-100 shadow-sm rounded-lg">
-                <div class="card-body d-flex flex-column">
-                  <h5 class="card-title text-primary">ShowList</h5>
-                  <hr>
-                  <p class="card-text">
-                    A Java-based Android movie tracking application designed to help users keep track of their favorite films.
-                    This project was developed as a practice exercise in Android development, utilizing SQLite for local data storage.
-                  </p>
-                  <p class="card-text">
-                    This was an individual school project focused on learning Android development. I was responsible for all phases, from conceptualization and design to implementation. I chose to build a movie tracking app to explore mobile development concepts.
-                    This project is not currently under active development, but I may revisit it in the future.
-                  </p>
-                  <p class="card-text">
-                    Through this project, I gained significant experience with the Android framework and its components for building mobile applications.
-                    I also acquired practical skills in working with SQLite for local database management on Android devices.
-                  </p>
-                  <hr>
-                  <p class="card-text"><small class="text-muted">
-                    Built with: Java, SQLite, Android Studio, & XML
-                  </small></p>
-                  <div class="mt-auto">
-                    <a href="https://github.com/CrypticWaffles/ShowList" class="btn btn-outline-primary btn-sm" target="_blank">GitHub</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Footer -->
+        <footer class="py-8 text-center border-t border-accent-purple mt-12 text-gray-400 text-sm font-mono">
+          <p>&copy; 2025 MILES GRIFFITH // ALL_RIGHTS_RESERVED</p>
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://github.com/CrypticWaffles" target="_blank" class="text-accent-purple hover:text-primary-text transition-colors duration-200 glitch-hover">COMM_LINK // GITHUB</a>
+            <a href="https://www.linkedin.com/in/mbgriffi/" target="_blank" class="text-accent-purple hover:text-primary-text transition-colors duration-200 glitch-hover">COMM_LINK // LINKEDIN</a>
+            <a href="mailto:milesbgriffith@gmail.com" class="text-accent-purple hover:text-primary-text transition-colors duration-200 glitch-hover">COMM_LINK // EMAIL</a>
           </div>
-        </div>
-      </section>
-
-    <!-- Footer -->
-    <footer class="container-fluid bg-dark text-light py-3 text-center">
-        <p class="mb-0">
-            &copy; 2025 Miles Griffith |
-            <a class="text-light" href="https://github.com/CrypticWaffles" target="_blank">GitHub</a> |
-            <a class="text-light" href="https://www.linkedin.com/in/mbgriffi/" target="_blank">LinkedIn</a> |
-            <a class="text-light" href="mailto:milesbgriffith@gmail.com">milesbgriffith@gmail.com</a>
-        </p>
-    </footer>
-
-    <script src="./js/bootstrap.bundle.min.js"></script>
-  </body>
+        </footer>
+    </div>
+  </div>
+  <!-- JavaScript Files -->
+  <script src="./js/scripts.js"></script>
+</body>
 </html>
