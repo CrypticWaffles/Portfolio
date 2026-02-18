@@ -1,42 +1,50 @@
-# Miles Griffith's Portfolio
-This repository contains the source code for my personal portfolio website. It is designed to provide a comprehensive overview of my skills, projects, educational background, and professional experience as an aspiring software developer.
+# Welcome to your Expo app 👋
 
-## live Demo
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-The portfolio is hosted on GitHub Pages with a custom domain and can be viewed at:
+## Get started
 
-**[https://mbgriffi.ddns.net/](https://mbgriffi.ddns.net/)**
+1. Install dependencies
 
-## Features
+   ```bash
+   npm install
+   ```
 
-The website is a single-page application with the following sections:
+2. Start the app
 
-*   **About Me:** A brief introduction to my background and career aspirations.
-*   **Technical Skills:** A comprehensive list of my programming languages, frameworks, tools, and soft skills.
-*   **Current Work:** An overview of the projects I am currently developing.
-*   **Education:** Details on my academic journey, including my Associate's and upcoming Bachelor's degrees, along with relevant coursework.
-*   **Experience:** Information on my professional work history.
-*   **Projects:** A showcase of my key software development projects with descriptions, technologies used, and links to relevant resources.
-*   **Resume:** An embedded, downloadable PDF of my current resume.
+   ```bash
+   npx expo start
+   ```
 
-## Tech Stack
+In the output, you'll find options to open the app in a
 
-*   **Frontend:** HTML, CSS, JavaScript, Bootstrap
-*   **Hosting:** GitHub Pages, NoIP for DNS
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-## Projects Showcase
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-This portfolio highlights several key projects, including:
+## Get a fresh project
 
-*   **Neighborhood Net:** A mobile application for community issue tracking, built with React Native, Node.js, Express, and MongoDB.
-*   **E-Voter:** A full-stack web application concept for online voting, developed with Sails.js, Bootstrap, and PostgreSQL.
-*   **Portfolio Site:** This website itself, built with HTML, CSS, a touch of JavaScript, and hosted on GitHub Pages.
-*   **ShowList:** A native Android application for tracking movies, built with Java and SQLite for local data storage.
+When you're ready, run:
 
-## Contact
+```bash
+npm run reset-project
+```
 
-You can reach me through the following channels:
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-*   **Email:** [milesbgriffith@gmail.com](mailto:milesbgriffith@gmail.com)
-*   **LinkedIn:** [linkedin.com/in/mbgriffi/](https://www.linkedin.com/in/mbgriffi/)
-*   **GitHub:** [github.com/CrypticWaffles](https://github.com/CrypticWaffles)
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
