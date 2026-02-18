@@ -1,3 +1,4 @@
+// ProjectCard.jsx
 export default function ProjectCard({ title, description, techStack, githubLink }) {
   return (
     <div className="card">
