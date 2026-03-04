@@ -5,24 +5,27 @@ export default function About() {
         <h2 className="section-label">About Me</h2>
         <div className="about-grid">
           <div className="about-text">
-            {/*TODO: Replace with actual text*/}
             <p>
-              I'm a Software Development student with a passion for building things that live on the
-              internet. I enjoy working across the full stack, from crafting clean user interfaces
-              to designing backend systems and databases.
+              I got into software because I like solving hard problems. There's something
+              satisfying about taking a complex system apart and rebuilding it until it works.
+              That drive, combined with wanting to prove there's no ceiling on what you can build
+              regardless of where you come from, is what keeps me motivated to keep getting better.
             </p>
             <p>
-              I'm currently looking for internship opportunities where I can contribute to real
-              products, learn from experienced engineers, and grow as a developer. I'm drawn to
-              projects with meaningful impact and teams that care about doing things right.
+              I work across the full stack and am comfortable on both ends, though I gravitate
+              toward the logic-heavy side: API design, data modeling, and figuring out how systems
+              fit together. I'm looking for an internship where I can contribute to real products
+              and grow alongside engineers who care about doing things right.
+            </p>
+            <p>
+              Outside of code, I read, play video games, watch anime, build Gunpla, and fall down
+              too many rabbit holes online. That habit of diving deep into things just because
+              they're interesting carries directly into how I approach problems.
             </p>
           </div>
           <div className="about-right">
             <div className="about-avatar">
-              {/*TODO: Replace with actual image
-                * <img className="avatar-initials" src="./public/image.png" alt="Profile Picture" />
-                */}
-              <div className="avatar-initials">MG</div>
+              <img className="avatar-img" src="/image.png" alt="Miles Griffith" />
             </div>
             <div className="about-facts">
               <div className="fact">

@@ -5,10 +5,8 @@ export default function Hero() {
         <p className="hero-greeting">Hi, I'm</p>
         <h1 className="hero-name">Miles Griffith</h1>
         <p className="hero-tagline">Software Development Student &amp; Full-Stack Developer</p>
-        {/*TODO: Replace sub text*/}
         <p className="hero-sub">
-          I build web and mobile applications, from frontend interfaces to backend APIs.
-          Currently seeking software engineering internships.
+          Full-stack developer with a focus on React and Node.js. Currently a Software Development student at Bellevue College, looking for engineering internships.
         </p>
         <div className="hero-cta">
           <a href="#projects" className="btn btn-primary">View My Work</a>

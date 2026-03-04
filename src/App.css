@@ -314,20 +314,12 @@
   justify-content: center;
 }
 
-.avatar-initials {
+.avatar-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: var(--surface-2);
   border: 2px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.05em;
-  user-select: none;
+  object-fit: cover;
 }
 
 .about-text p {
