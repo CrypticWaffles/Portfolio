@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "NeighborhoodNet",
     description:
-      "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. - Github Repo is Private.",
+      "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. Repository is private.",
     tech: ["React Native", "Expo", "Firebase", "Google Cloud"],
     //status: "In Progress",
   },
@@ -34,13 +34,13 @@ export const education = [
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected May 2027",
-    notes: "GPA: 3.68 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Enterprise Data Apps, Advanced Data Access Techniques, Developing Mobile Apps, Problem Solving Strategies, Information Security Essentials",
+    notes: "GPA: 3.68 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
   },
   {
     school: "Bellevue College",
     degree: "Associate of Applied Science in Software Development",
     dates: "Received December 2024 · With Honors",
-    notes: "GPA: 3.68 · Relevant coursework: Object-Oriented Programming, Server-Side Web Development, Client-Side Web Programming, Database Theory & SQL, Systems Analysis & Design, Mobile Solution Implementation, Intro to Python, Intro to C#, Linux",
+    notes: "GPA: 3.68 · Relevant coursework: Object-Oriented Programming, Server-Side Web Development, Database Theory & SQL, Mobile Solution Implementation, Systems Analysis & Design",
   },
 ];
 
