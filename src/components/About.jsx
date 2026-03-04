@@ -4,10 +4,11 @@ export default function About() {
       <div className="container">
         <h2 className="section-label">About Me</h2>
         <div className="about-grid">
+          {/*TODO: Replace about text*/}
           <div className="about-text">
             <p>
               I'm a Computer Science student with a passion for building things that live on the
-              internet. I enjoy working across the full stack — from crafting clean user interfaces
+              internet. I enjoy working across the full stack, from crafting clean user interfaces
               to designing backend systems and databases.
             </p>
             <p>

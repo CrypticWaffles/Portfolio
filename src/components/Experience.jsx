@@ -1,6 +1,6 @@
 import { education, experience } from '../data';
 
-function TimelineItem({ title, org, dates, notes }) {
+function TimelineItem({ title, org, dates, notes, bullets }) {
   return (
     <div className="timeline-item">
       <div className="timeline-dot" />
@@ -10,7 +10,13 @@ function TimelineItem({ title, org, dates, notes }) {
           <span className="timeline-dates">{dates}</span>
         </div>
         <div className="timeline-org">{org}</div>
-        {notes && <p className="timeline-notes">{notes}</p>}
+        {bullets ? (
+          <ul className="timeline-bullets">
+            {bullets.map((b, i) => <li key={i}>{b}</li>)}
+          </ul>
+        ) : notes && (
+          <p className="timeline-notes">{notes}</p>
+        )}
       </div>
     </div>
   );
@@ -47,7 +53,7 @@ export default function Experience() {
                     title={item.title}
                     org={item.company}
                     dates={item.dates}
-                    notes={item.description}
+                    bullets={item.bullets}
                   />
                 ))}
               </div>

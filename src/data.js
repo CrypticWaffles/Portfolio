@@ -1,4 +1,3 @@
-// TODO: Update the project descriptions, technologies, and GitHub links to reflect actual work. Add more projects.
 export const projects = [
   {
     title: "NeighborhoodNet",
@@ -22,7 +21,6 @@ export const projects = [
   },
 ];
 
-// TODO: Update the skills to reflect actual programming languages, frameworks, databases, and tools. 
 export const skills = {
   Languages: ["JavaScript", "Java", "Python", "C#", "Kotlin", "HTML", "CSS", "SQL"],
   Frameworks: ["React", "React Native", "Node.js", "Sails.js", "Tailwind CSS", "Bootstrap"],
@@ -30,34 +28,51 @@ export const skills = {
   Tools: ["Git", "GitHub", "Expo", "Vite", "VS Code"],
 };
 
-// TODO: Fill in your actual school, degree, and graduation year
 export const education = [
   {
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected May 2027",
-    notes: "Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering",
+    notes: "GPA: 3.68 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Enterprise Data Apps, Advanced Data Access Techniques, Developing Mobile Apps, Problem Solving Strategies, Information Security Essentials",
   },
   {
     school: "Bellevue College",
     degree: "Associate of Applied Science in Software Development",
-    dates: "Received December 2024",
-    notes: "Relevant coursework: Data Structures, Algorithms, Database Systems, Software Engineering",
+    dates: "Received December 2024 · With Honors",
+    notes: "GPA: 3.68 · Relevant coursework: Object-Oriented Programming, Server-Side Web Development, Client-Side Web Programming, Database Theory & SQL, Systems Analysis & Design, Mobile Solution Implementation, Intro to Python, Intro to C#, Linux",
   },
 ];
 
-// TODO: Add any jobs, internships, or relevant experience
 export const experience = [
-  // {
-  //   title: "Job Title",
-  //   company: "Company Name",
-  //   dates: "Month Year – Month Year",
-  //   description: "Brief description of responsibilities and achievements.",
-  // },
   {
-     title: "Warehouse Reciever",
-     company: "Snoqualmie Casino & Hotel",
-     dates: "September 2025 – Present",
-     description: "Managed and received incoming shipments, ensuring correct quantities and products.Conducted regular inventory of all items in the warehouse, maintaining accurate records. Delivered products to various departments promptly. Kept all receiving areas clean and well organized. ",
-   },
+    title: "Warehouse Receiver",
+    company: "Snoqualmie Casino & Hotel",
+    dates: "September 2025 – Present",
+    bullets: [
+      "Managed and received incoming shipments, verifying correct quantities and products.",
+      "Conducted regular warehouse inventory and maintained accurate records.",
+      "Delivered products to various departments promptly and efficiently.",
+      "Kept all receiving areas clean and well organized.",
+    ],
+  },
+  {
+    title: "In-Store Shopping Lead",
+    company: "Safeway",
+    dates: "September 2023 – September 2024",
+    bullets: [
+      "Led a team of in-store shoppers, coordinating daily tasks and ensuring timely order fulfillment.",
+      "Trained new employees on efficient shopping techniques and customer service standards.",
+      "Maintained high order accuracy, resulting in increased customer satisfaction scores.",
+      "Collaborated with store management to optimize shopping routes and improve efficiency.",
+    ],
+  },
+  {
+    title: "In-Store Shopper",
+    company: "Safeway",
+    dates: "February 2023 – September 2023",
+    bullets: [
+      "Fulfilled customer orders accurately and efficiently in a fast-paced environment.",
+      "Communicated with team members and management to resolve issues and improve performance.",
+    ],
+  },
 ];
