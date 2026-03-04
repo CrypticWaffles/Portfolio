@@ -13,7 +13,6 @@ export default function Hero() {
         <div className="hero-cta">
           <a href="#projects" className="btn btn-primary">View My Work</a>
           <a href="#contact" className="btn btn-outline">Get in Touch</a>
-          <a href="/Miles_Griffith.pdf" download className="btn btn-outline">Download Resume</a>
         </div>
       </div>
       <div className="hero-scroll-hint" aria-hidden="true">

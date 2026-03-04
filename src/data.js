@@ -2,8 +2,9 @@ export const projects = [
   {
     title: "NeighborhoodNet",
     description:
-      "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents.",
+      "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. - Github Repo is Private.",
     tech: ["React Native", "Expo", "Firebase", "Google Cloud"],
+    //status: "In Progress",
   },
   {
     title: "E-Voter",
@@ -49,9 +50,9 @@ export const experience = [
     company: "Snoqualmie Casino & Hotel",
     dates: "September 2025 – Present",
     bullets: [
-      "Managed and received incoming shipments, verifying correct quantities and products.",
-      "Conducted regular warehouse inventory and maintained accurate records.",
-      "Delivered products to various departments promptly and efficiently.",
+      "Managed and received incoming shipments, verifying quantities and maintaining accurate inventory records across multiple product categories.",
+      "Conducted systematic warehouse audits and documented findings to ensure data accuracy and accountability.",
+      "Coordinated timely delivery of products to multiple departments using structured routing and scheduling.",
       "Kept all receiving areas clean and well organized.",
     ],
   },
@@ -60,10 +61,10 @@ export const experience = [
     company: "Safeway",
     dates: "September 2023 – September 2024",
     bullets: [
-      "Led a team of in-store shoppers, coordinating daily tasks and ensuring timely order fulfillment.",
-      "Trained new employees on efficient shopping techniques and customer service standards.",
-      "Maintained high order accuracy, resulting in increased customer satisfaction scores.",
-      "Collaborated with store management to optimize shopping routes and improve efficiency.",
+      "Led a team of in-store shoppers, scheduling daily tasks and tracking order fulfillment metrics to ensure efficiency.",
+      "Developed and delivered onboarding training for new employees, standardizing workflows and quality expectations.",
+      "Maintained high order accuracy through systematic verification processes, improving customer satisfaction scores.",
+      "Analyzed shopping route data with store management to reduce pick times and improve team throughput.",
     ],
   },
   {
