@@ -1,10 +1,25 @@
 export const projects = [
   {
+    title: "Reaper",
+    description:
+      "REAPER is a React Native daily reflection system built to run on Android/IPhone using HealthKit. It measures whether your recent behavior is keeping up with the constant pressure of time. Repository is private.",
+    tech: ["React Native", "Expo", "Zustand", "MMKV Storage", "JavaScript"],
+    status: "In Progress",
+  },
+  {
     title: "NeighborhoodNet",
     description:
       "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. Repository is private.",
     tech: ["React Native", "Expo", "Firebase", "Google Cloud"],
-    //status: "In Progress",
+    demo: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQAKJOaLQCN8Q56Sxs3oLTXCARg-VGTMX8dLLvevOUX7fcY?e=O9XHag",
+  },
+  {
+    title: "Hospital Management System",
+    description:
+      "A full-stack hospital management system built with SignalR, C#, and MongoDB. Features real-time communication, user management, and data persistence.",
+    tech: ["SignalR", "C#", "MongoDB"],
+    github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
+    demo: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
   },
   {
     title: "E-Voter",
@@ -12,12 +27,13 @@ export const projects = [
       "A full-stack online voting platform built with Sails.js and a PostgreSQL backend. Features secure authentication, real-time vote tallying, and an admin dashboard.",
     tech: ["Sails.js", "Node.js", "PostgreSQL", "JavaScript"],
     github: "https://github.com/CrypticWaffles/TheMiddlesRepo",
+    demo: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQD2aFgDOjo1Rr6Vsu0_60ahAcwdOkf9KtRGnjGf69LcSrE?e=DbOh6a",
   },
   {
     title: "ShowList",
     description:
       "An Android application for tracking movies and TV shows. Users can search a catalog, mark titles as watched, and manage a personal watchlist.",
-    tech: ["Java", "Kotlin", "Android"],
+    tech: ["SQLite", "Kotlin", "Android"],
     github: "https://github.com/CrypticWaffles/ShowList",
   },
 ];
