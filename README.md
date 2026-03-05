@@ -10,7 +10,7 @@ A single-page application showcasing projects, skills, education, and work exper
 - **About** — background summary
 - **Skills** — languages, frameworks, databases, and tools
 - **Projects** — List of projects i've worked on
-- **Experience** — work history
+- **Experience** — work history & Education
 - **Contact** — contact info / links
 
 ## Tech Stack
