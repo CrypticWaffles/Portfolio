@@ -1,4 +1,14 @@
 export const projects = [
+  /*{
+    title: "Title",
+    description:
+      "Desc",
+    tech: ["Stack Item 1", "Stack Item 2", "Stack Item 3", "Etc"],
+    status: "In Progress",
+    image: "images/image.jpg-png-etc",
+    github: "link",
+    demo: "link",
+  },*/
   {
     title: "Reaper",
     description:
@@ -73,6 +83,17 @@ export const education = [
 ];
 
 export const experience = [
+  /*{
+    title: "Title",
+    company: "Compant",
+    dates: "Start Date – End Date",
+    bullets: [
+      "Bullet Point",
+      "Bullet Point",
+      "Bullet Point",
+      "Bullet Point",
+    ],
+  },*/
   {
     title: "Warehouse Receiver",
     company: "Snoqualmie Casino & Hotel",
