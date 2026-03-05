@@ -6,12 +6,12 @@ Personal portfolio website built with React and Vite.
 
 A single-page application showcasing projects, skills, education, and work experience. Sections include:
 
-- **Hero** — intro and resume download
+- **Hero** — intro
 - **About** — background summary
 - **Skills** — languages, frameworks, databases, and tools
-- **Projects** — NeighborhoodNet, E-Voter, ShowList
+- **Projects** — List of projects i've worked on
 - **Experience** — work history
-- **Contact** — contact form / links
+- **Contact** — contact info / links
 
 ## Tech Stack
 
