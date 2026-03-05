@@ -50,20 +50,20 @@ export const projects = [
 
 export const skills = {
   Languages: {
-    proficient: ["JavaScript", "HTML", "CSS", "SQL"],
-    familiar: ["Python", "Java", "C#", "Kotlin"],
+    proficient: ["JavaScript", "HTML", "CSS", "SQL", "C#"],
+    familiar: ["Python", "Java", "Kotlin"],
   },
   Frameworks: {
-    proficient: ["React", "React Native", "Tailwind CSS"],
-    familiar: ["Node.js", "Sails.js", "Bootstrap"],
+    proficient: ["React", "React Native", "Bootstrap", "Node.js"],
+    familiar: ["Sails.js", "Tailwind CSS"],
   },
   "Databases & Cloud": {
-    proficient: ["PostgreSQL", "Firebase"],
-    familiar: ["MongoDB", "Google Cloud"],
+    proficient: ["PostgreSQL", "Firebase", "MongoDB"],
+    familiar: ["Google Cloud"],
   },
   Tools: {
-    proficient: ["Git", "GitHub", "Expo"],
-    familiar: ["Vite", "VS Code"],
+    proficient: ["Git", "GitHub", "Expo", "VS Code", "SSMS"],
+    familiar: ["Vite"],
   },
 };
 
