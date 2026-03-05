@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Currently from './components/Currently';
 
 export default function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Currently />
         <About />
         <Skills />
         <Projects />

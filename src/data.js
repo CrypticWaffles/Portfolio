@@ -67,6 +67,11 @@ export const skills = {
   },
 };
 
+export const current = {
+  building: "Reaper — a React Native daily reflection app",
+  learning: "Software Testing & Project Management",
+};
+
 export const education = [
   {
     school: "Bellevue College",
