@@ -25,7 +25,7 @@ export default function About() {
           </div>
           <div className="about-right">
             <div className="about-avatar">
-              <img className="avatar-img" src="/1752175025125.jpg" alt="Miles Griffith" />
+              <img className="avatar-img" src="/images/headshot.jpg" alt="Miles Griffith" />
             </div>
             <div className="about-facts">
               <div className="fact">

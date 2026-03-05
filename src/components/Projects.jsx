@@ -18,6 +18,11 @@ export default function Projects() {
         <div className="projects-grid">
           {projects.map(project => (
             <article key={project.title} className="project-card">
+              {project.image && (
+                <div className="project-img-wrap">
+                  <img src={project.image} alt={`${project.title} screenshot`} className="project-img" />
+                </div>
+              )}
               <div className="project-top">
                 <div className="project-title-row">
                   <h3 className="project-title">{project.title}</h3>
