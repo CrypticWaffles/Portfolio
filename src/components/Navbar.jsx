@@ -48,7 +48,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="/docs/Miles_Griffith.pdf"
+              href="/docs/Miles_Griffith_Resume.pdf"
               download
               className="nav-resume-link"
               onClick={() => setMenuOpen(false)}
