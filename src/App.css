@@ -483,7 +483,7 @@
 .skill-tag--proficient {
   background: var(--accent-dim);
   color: var(--accent);
-  border: 1px solid rgba(79, 110, 247, 0.2);
+  border: 1px solid rgba(155, 89, 247, 0.2);
 }
 
 .skill-tag--familiar {
