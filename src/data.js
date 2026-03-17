@@ -43,7 +43,7 @@ export const projects = [
     title: "ShowList",
     description:
       "An exploratory Android application for tracking movies and TV shows. Users can search a catalog, mark titles as watched, and manage a personal watchlist. I made this as a basic project to explore android.",
-    tech: ["SQLite", "Kotlin", "Android"],
+    tech: ["SQLite", "Java", "Android"],
     github: "https://github.com/CrypticWaffles/ShowList",
   },
 ];
