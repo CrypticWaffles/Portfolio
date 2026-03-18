@@ -40,11 +40,11 @@ export const projects = [
     demo: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQD2aFgDOjo1Rr6Vsu0_60ahAcwdOkf9KtRGnjGf69LcSrE?e=DbOh6a",
   },
   {
-    title: "ShowList",
+    title: "Queued",
     description:
       "An exploratory Android application for tracking movies and TV shows. Users can search a catalog, mark titles as watched, and manage a personal watchlist. I made this as a basic project to explore android.",
     tech: ["SQLite", "Java", "Android"],
-    github: "https://github.com/CrypticWaffles/ShowList",
+    github: "https://github.com/CrypticWaffles/Queued",
     image: "/images/showlist.png",
   },
 ];
