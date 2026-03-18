@@ -346,6 +346,15 @@
   color: var(--text-muted);
 }
 
+.currently-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.currently-link:hover {
+  color: var(--accent);
+}
+
 /* ===== About ===== */
 .about-grid {
   display: grid;

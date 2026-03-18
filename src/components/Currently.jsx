@@ -7,7 +7,10 @@ export default function Currently() {
         <div className="currently-item">
           <span className="currently-dot" aria-hidden="true" />
           <span className="currently-label">Building</span>
-          <span className="currently-value">{current.building}</span>
+          {current.buildingLink
+            ? <a href={current.buildingLink} className="currently-value currently-link">{current.building}</a>
+            : <span className="currently-value">{current.building}</span>
+          }
         </div>
         <div className="currently-item">
           <span className="currently-dot" aria-hidden="true" />
