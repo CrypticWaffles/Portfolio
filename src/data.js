@@ -70,6 +70,7 @@ export const skills = {
 
 export const current = {
   building: "Reaper — a React Native daily reflection app",
+  buildingLink: "#projects",
   learning: "Software Testing & Project Management",
 };
 
@@ -89,17 +90,6 @@ export const education = [
 ];
 
 export const experience = [
-  /*{
-    title: "Title",
-    company: "Compant",
-    dates: "Start Date – End Date",
-    bullets: [
-      "Bullet Point",
-      "Bullet Point",
-      "Bullet Point",
-      "Bullet Point",
-    ],
-  },*/
   {
     title: "Warehouse Receiver",
     company: "Snoqualmie Casino & Hotel",
