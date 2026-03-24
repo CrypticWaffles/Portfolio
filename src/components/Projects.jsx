@@ -59,6 +59,16 @@ export default function Projects() {
                       Live Demo <ExternalIcon />
                     </a>
                   )}
+                  {project.presentation && (
+                    <a
+                      href={project.presentation}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      Presentation <ExternalIcon />
+                    </a>
+                  )}
                 </div>
               </div>
             </article>

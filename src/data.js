@@ -36,7 +36,7 @@ export const projects = [
     description:
       "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. Repository is private.",
     tech: ["React Native", "Expo", "Firebase", "Google Cloud"],
-    demo: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQAKJOaLQCN8Q56Sxs3oLTXCARg-VGTMX8dLLvevOUX7fcY?e=O9XHag",
+    presentation: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQAKJOaLQCN8Q56Sxs3oLTXCARg-VGTMX8dLLvevOUX7fcY?e=O9XHag",
   },
   {
     title: "E-Voter",
@@ -44,7 +44,7 @@ export const projects = [
       "A full-stack online voting platform built with Sails.js and a PostgreSQL backend. Features secure authentication, real-time vote tallying, and an admin dashboard.",
     tech: ["Sails.js", "Node.js", "PostgreSQL", "JavaScript"],
     github: "https://github.com/CrypticWaffles/TheMiddlesRepo",
-    demo: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQD2aFgDOjo1Rr6Vsu0_60ahAcwdOkf9KtRGnjGf69LcSrE?e=DbOh6a",
+    presentation: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQD2aFgDOjo1Rr6Vsu0_60ahAcwdOkf9KtRGnjGf69LcSrE?e=DbOh6a",
   },
 ];
 
