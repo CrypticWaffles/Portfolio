@@ -81,7 +81,7 @@ export const education = [
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected December 2026",
-    notes: "GPA: 3.68 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
+    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
   },
   {
     school: "Bellevue College",
