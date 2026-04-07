@@ -42,10 +42,10 @@ export const projects = [
   {
     title: "E-Voter",
     description:
-      "A full-stack online voting platform built with Sails.js and a SQLite backend. Features secure authentication, real-time vote tallying, and an admin dashboard.",
+      "A full-stack online voting platform built with Sails.js and a SQLite backend. Features secure authentication, and real-time vote tallying.",
     tech: ["Sails.js", "Node.js", "SQLite", "JavaScript"],
     github: "https://github.com/CrypticWaffles/E-Voter",
-    presentation: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQD2aFgDOjo1Rr6Vsu0_60ahAcwdOkf9KtRGnjGf69LcSrE?e=DbOh6a",
+    demo: "https://e-voter-5tp3.onrender.com",
   },
 ];
 
