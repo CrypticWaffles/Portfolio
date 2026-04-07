@@ -15,6 +15,7 @@ export const projects = [
       "An exploratory Android application for tracking movies and TV shows. Users can search a catalog, mark titles as watched, and manage a personal watchlist. I made this as a basic project to explore android.",
     tech: ["SQLite", "Java", "Android"],
     github: "https://github.com/CrypticWaffles/Queued",
+    demo: "https://appetize.io/app/b_6pdork34eiaei2tu6cignrfbgi",
   },
   {
     title: "Hospital Management System",
