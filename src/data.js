@@ -23,7 +23,7 @@ export const projects = [
       "A full-stack hospital management system built with SignalR, C#, and MongoDB. Features real-time communication, user management, and data persistence.",
     tech: ["SignalR", "C#", "MongoDB"],
     github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
-    demo: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
+    presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
   },
   {
     title: "Reaper",
