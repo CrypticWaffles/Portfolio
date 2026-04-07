@@ -16,6 +16,7 @@ export const projects = [
     tech: ["SQLite", "Java", "Android"],
     github: "https://github.com/CrypticWaffles/Queued",
     demo: "https://appetize.io/app/b_6pdork34eiaei2tu6cignrfbgi",
+    /*image: "images/queued.png",*/
   },
   {
     title: "Hospital Management System",
@@ -46,6 +47,7 @@ export const projects = [
     tech: ["Sails.js", "Node.js", "SQLite", "JavaScript"],
     github: "https://github.com/CrypticWaffles/E-Voter",
     demo: "https://e-voter-5tp3.onrender.com",
+    /*image: "images/evoter.png",*/
   },
 ];
 
