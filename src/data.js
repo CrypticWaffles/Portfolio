@@ -34,11 +34,12 @@ export const projects = [
     status: "In Progress",
   },
   {
-    title: "NeighborhoodNet",
-    description:
-      "A React Native mobile app for community reporting and local communication. Users can post neighborhood issues, share updates, and connect with nearby residents. Repository is private.",
-    tech: ["React Native", "Expo", "Firebase", "Google Cloud"],
-    presentation: "https://1drv.ms/p/c/b6c0d45c28bc44af/IQAKJOaLQCN8Q56Sxs3oLTXCARg-VGTMX8dLLvevOUX7fcY?e=O9XHag",
+    title: "Pipeline",
+    description: "A Kanban board for tracking job applications through every stage of the search. Users can drag cards across stages, log salary and notes, and view metrics on a live dashboard. Authenticated with Google OAuth.",
+    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth"],
+    github: "https://github.com/CrypticWaffles/Pipeline",
+    demo: "https://pipeline-nu-ecru.vercel.app",
+    /*image: "images/pipeline.png",*/
   },
   {
     title: "E-Voter",
