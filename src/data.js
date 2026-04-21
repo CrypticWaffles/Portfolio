@@ -19,21 +19,6 @@ export const projects = [
     /*image: "images/queued.png",*/
   },
   {
-    title: "Hospital Management System",
-    description:
-      "A full-stack hospital management system built with SignalR, C#, and MongoDB. Features real-time communication, user management, and data persistence.",
-    tech: ["SignalR", "C#", "MongoDB"],
-    github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
-    presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
-  },
-  {
-    title: "Reaper",
-    description:
-      "REAPER is a React Native daily reflection system built to run on Android/IPhone using HealthKit. It measures whether your recent behavior is keeping up with the constant pressure of time. Repository is private.",
-    tech: ["React Native", "Expo", "Zustand", "MMKV Storage", "JavaScript"],
-    status: "In Progress",
-  },
-  {
     title: "Pipeline",
     description: "A Kanban board for tracking job applications through every stage of the search. Users can drag cards across stages, log salary and notes, and view metrics on a live dashboard. Authenticated with Google OAuth.",
     tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth"],
@@ -49,6 +34,21 @@ export const projects = [
     github: "https://github.com/CrypticWaffles/E-Voter",
     demo: "https://e-voter-5tp3.onrender.com",
     /*image: "images/evoter.png",*/
+  },
+  {
+    title: "Hospital Management System",
+    description:
+      "A full-stack hospital management system built with SignalR, C#, and MongoDB. Features real-time communication, user management, and data persistence.",
+    tech: ["SignalR", "C#", "MongoDB"],
+    github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
+    presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
+  },
+  {
+    title: "Reaper",
+    description:
+      "REAPER is a React Native daily reflection system built to run on Android/IPhone using HealthKit. It measures whether your recent behavior is keeping up with the constant pressure of time. Repository is private.",
+    tech: ["React Native", "Expo", "Zustand", "MMKV Storage", "JavaScript"],
+    status: "In Progress",
   },
 ];
 
