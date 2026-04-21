@@ -62,8 +62,8 @@ export const skills = {
     familiar: ["Sails.js", "Tailwind CSS"],
   },
   "Databases & Cloud": {
-    proficient: ["PostgreSQL", "Firebase", "MongoDB", "SQLite"],
-    familiar: ["Google Cloud"],
+    proficient: ["PostgreSQL", "MongoDB", "SQLite"],
+    familiar: ["Firebase", "Google Cloud"],
   },
   Tools: {
     proficient: ["Git", "GitHub", "Expo", "VS Code", "SSMS"],
@@ -74,7 +74,7 @@ export const skills = {
 export const current = {
   building: "Reaper — a React Native daily reflection app",
   buildingLink: "#projects",
-  learning: "Software Testing & Project Management",
+  learning: "Advanced Communication in Business & Technology, Business of IT: Legal Regulatory",
 };
 
 export const education = [
@@ -82,7 +82,7 @@ export const education = [
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected December 2026",
-    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
+    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques, Software Testing, Project Management",
   },
   {
     school: "Bellevue College",
