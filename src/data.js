@@ -72,9 +72,9 @@ export const skills = {
 };
 
 export const current = {
-  building: "Reaper — a React Native daily reflection app",
+  building: "Pipeline — A Kanban board for tracking job applications through every stage of the search.",
   buildingLink: "#projects",
-  learning: "Advanced Communication in Business & Technology, Business of IT: Legal Regulatory",
+  learning: "C++ Fundamentals — Learning the basics of C++ to expand my programming knowledge and improve my problem-solving skills.",
 };
 
 export const education = [
