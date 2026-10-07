@@ -11,10 +11,10 @@
   --border: #242424;
   --accent: #9b59f7;
   --accent-hover: #ae72f9;
-  --accent-dim: rgba(155, 89, 247, 0.12);
+  --accent-dim: rgba(155, 89, 247, 0.08);
   --text: #e2e2e2;
   --text-muted: #9c9c9c;
-  --text-dim: #808080;
+  --text-dim: #868686;
   --radius: 10px;
   --max-w: 1080px;
 }
