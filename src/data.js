@@ -10,71 +10,65 @@ export const projects = [
     demo: "link",
   },*/
   {
-    title: "Queued",
-    description:
-      "An exploratory Android application for tracking movies and TV shows. Users can search a catalog, mark titles as watched, and manage a personal watchlist. I made this as a basic project to explore android.",
-    tech: ["SQLite", "Java", "Android"],
-    github: "https://github.com/CrypticWaffles/Queued",
-    demo: "https://appetize.io/app/b_6pdork34eiaei2tu6cignrfbgi",
-    /*image: "images/queued.png",*/
-  },
-  {
     title: "Pipeline",
-    description: "A Kanban board for tracking job applications through every stage of the search. Users can drag cards across stages, log salary and notes, and view metrics on a live dashboard. Authenticated with Google OAuth.",
-    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth"],
+    description:
+      "A full-stack job-application tracker with a five-stage drag-and-drop Kanban board. Signs in with Google OAuth via Passport.js and JWT, with every query scoped to the signed-in user. Includes CSV import/export and a metrics dashboard built on SQL aggregations. Deployed with a no-login demo mode; I use it to track about 60 of my own applications.",
+    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth", "JWT"],
     github: "https://github.com/CrypticWaffles/Pipeline",
     demo: "https://pipeline-nu-ecru.vercel.app",
     /*image: "images/pipeline.png",*/
   },
   {
+    title: "Hospital Management System",
+    description:
+      "A hospital management system with a Windows Forms client and an ASP.NET Core 8 SignalR server, built with a two-person team. Features a role-based login hub, real-time chat, a live dashboard pushing simulated patient vitals, and analytics reports over SQL Server data with export to CSV, JSON, and XML.",
+    tech: ["C#", "ASP.NET Core", "SignalR", "Windows Forms", "SQL Server", "MongoDB"],
+    github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
+    presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
+  },
+  {
     title: "E-Voter",
     description:
-      "A full-stack online voting platform built with Sails.js and a SQLite backend. Features secure authentication, and real-time vote tallying.",
-    tech: ["Sails.js", "Node.js", "SQLite", "JavaScript"],
+      "A civic engagement app built with Sails.js where users watch legislative videos and vote yes/no, with results aggregated by state via a ZIP-to-state lookup. I conceived the product and served as lead developer and product owner for a team of 4, writing about 75% of 92 commits across 70+ pull requests.",
+    tech: ["Sails.js", "Node.js", "EJS", "Bootstrap"],
     github: "https://github.com/CrypticWaffles/E-Voter",
     demo: "https://e-voter-5tp3.onrender.com",
     /*image: "images/evoter.png",*/
   },
   {
-    title: "Hospital Management System",
+    title: "Queued",
     description:
-      "A full-stack hospital management system built with SignalR, C#, and MongoDB. Features real-time communication, user management, and data persistence.",
-    tech: ["SignalR", "C#", "MongoDB"],
-    github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
-    presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
-  },
-  {
-    title: "Reaper",
-    description:
-      "REAPER is a React Native daily reflection system built to run on Android/IPhone using HealthKit. It measures whether your recent behavior is keeping up with the constant pressure of time. Repository is private.",
-    tech: ["React Native", "Expo", "Zustand", "MMKV Storage", "JavaScript"],
-    status: "In Progress",
+      "An Android app for tracking TV shows. Users can search a catalog via the TVmaze API with debounced search, sort and filter results, mark favorites, and manage a personal watchlist with local SQLite persistence.",
+    tech: ["SQLite", "Java", "Android", "TVmaze API"],
+    github: "https://github.com/CrypticWaffles/Queued",
+    demo: "https://appetize.io/app/b_6pdork34eiaei2tu6cignrfbgi",
+    /*image: "images/queued.png",*/
   },
 ];
 
 export const skills = {
   Languages: {
-    proficient: ["JavaScript", "HTML", "CSS", "SQL", "C#"],
-    familiar: ["Python", "Java", "Kotlin"],
+    proficient: ["JavaScript", "C#", "SQL", "Java", "HTML", "CSS"],
+    familiar: ["TypeScript", "Python"],
   },
   Frameworks: {
-    proficient: ["React", "React Native", "Bootstrap", "Node.js"],
-    familiar: ["Sails.js", "Tailwind CSS"],
+    proficient: ["React", "Node.js", "Express", "ASP.NET Core", "Tailwind CSS", "Bootstrap"],
+    familiar: ["Sails.js"],
   },
   "Databases & Cloud": {
-    proficient: ["PostgreSQL", "MongoDB", "SQLite"],
+    proficient: ["PostgreSQL", "SQL Server", "MongoDB", "SQLite"],
     familiar: ["Firebase", "Google Cloud"],
   },
   Tools: {
-    proficient: ["Git", "GitHub", "Expo", "VS Code", "SSMS"],
-    familiar: ["Vite"],
+    proficient: ["Git", "GitHub", "GitHub Actions", "Vite", "VS Code", "SSMS"],
+    familiar: ["AI-Assisted Development (Claude Code, Gemini)"],
   },
 };
 
 export const current = {
-  building: "Pipeline — A Kanban board for tracking job applications through every stage of the search.",
-  buildingLink: "#projects",
-  learning: "C++ Fundamentals — Learning the basics of C++ to expand my programming knowledge and improve my problem-solving skills.",
+  building: "Pipeline — adding automated tests & CI",
+  buildingLink: "https://github.com/CrypticWaffles/Pipeline",
+  learning: "Software Testing & Project Management",
 };
 
 export const education = [
@@ -82,7 +76,7 @@ export const education = [
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected December 2026",
-    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques, Software Testing, Project Management",
+    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
   },
   {
     school: "Bellevue College",
