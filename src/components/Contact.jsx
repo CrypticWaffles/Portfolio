@@ -29,7 +29,7 @@ export default function Contact() {
       <div className="container contact-inner">
         <h2 className="section-label">Get in Touch</h2>
         <p className="contact-desc">
-          I'm actively looking for software engineering internships. If you have an opportunity,
+          I'm actively looking for full-time software engineering roles. If you have an opportunity,
           a question, or just want to connect, feel free to reach out.
         </p>
         <a href="mailto:milesbgriffith@gmail.com" className="btn btn-primary contact-btn">

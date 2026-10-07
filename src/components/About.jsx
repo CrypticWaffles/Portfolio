@@ -14,7 +14,7 @@ export default function About() {
             <p>
               I work across the full stack and am comfortable on both ends, though I gravitate
               toward the logic-heavy side: API design, data modeling, and figuring out how systems
-              fit together. I'm looking for an internship where I can contribute to real products
+              fit together. I'm looking for a role where I can contribute to real products
               and grow alongside engineers who care about doing things right.
             </p>
             <p>
@@ -34,7 +34,7 @@ export default function About() {
               </div>
               <div className="fact">
                 <span className="fact-label">Status</span>
-                <span className="fact-value accent">Open to Internships</span>
+                <span className="fact-value accent">Open to Full-Time Roles</span>
               </div>
               <div className="fact">
                 <span className="fact-label">GitHub</span>
