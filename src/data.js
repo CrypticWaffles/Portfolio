@@ -111,7 +111,7 @@ export const experience = [
     company: "Safeway",
     dates: "September 2023 – September 2024",
     bullets: [
-      "Promoted from Shopper after 8 months to supervise a team of 6 fulfilling 40–120 online orders per day across 2–3 shifts",
+      "Promoted from Shopper after 7 months to supervise a team of 6 fulfilling 40–120 online orders per day across 2–3 shifts",
       "Reviewed order accuracy, pick rate, and on-time completion with the store manager weekly, and audited shopper orders for procedure compliance",
       "Trained new hires and wrote the department's onboarding materials",
     ],
@@ -119,6 +119,6 @@ export const experience = [
   {
     title: "Drive Up & Go Shopper",
     company: "Safeway",
-    dates: "January 2023 – September 2023",
+    dates: "February 2023 – September 2023",
   },
 ];
