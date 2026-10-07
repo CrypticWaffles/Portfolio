@@ -7,7 +7,7 @@ export default function Hero() {
         <p className="hero-tagline">Full-Stack Developer, graduating December 2026</p>
         <p className="hero-sub">
           I like pulling apart complex problems and building systems that actually work. Currently
-          seeking full-time software engineering roles in the Seattle area.
+          seeking full-time software engineering roles in the Seattle area or remote.
         </p>
         <div className="hero-cta">
           <a href="#projects" className="btn btn-primary">View My Work</a>
