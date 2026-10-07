@@ -12,8 +12,8 @@ export const projects = [
   {
     title: "Pipeline",
     description:
-      "A full-stack job-application tracker with a five-stage drag-and-drop Kanban board. Signs in with Google OAuth via Passport.js and JWT, with every query scoped to the signed-in user. Includes CSV import/export and a metrics dashboard built on SQL aggregations. Deployed with a no-login demo mode; I use it to track about 60 of my own applications.",
-    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth", "JWT"],
+      "A full-stack job-application tracker with a five-stage drag-and-drop Kanban board. Signs in with Google OAuth via Passport.js and JWT, with every query scoped to the signed-in user. Includes CSV import/export and a metrics dashboard built on SQL aggregations. Deployed with a no-login demo mode; I use it to track about 60 of my own applications. Covered by 16 API tests with Vitest and Supertest, run with lint on every push through GitHub Actions.",
+    tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth", "JWT", "Vitest", "GitHub Actions"],
     github: "https://github.com/CrypticWaffles/Pipeline",
     demo: "https://pipeline-nu-ecru.vercel.app",
     image: "/images/pipeline.png",
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: "Hospital Management System",
     description:
-      "A hospital management system with a Windows Forms client and an ASP.NET Core 8 SignalR server, built with a two-person team. Features a role-based login hub, real-time chat, a live dashboard pushing simulated patient vitals, and analytics reports over SQL Server data with export to CSV, JSON, and XML.",
+      "A hospital management system with a Windows Forms client and an ASP.NET Core 8 SignalR server, built with a two-person team. Features login and registration with BCrypt-hashed passwords, a role-based hub for five user roles, real-time chat, a live dashboard pushing simulated vitals every 2 seconds, and analytics reports over SQL Server data with export to CSV, JSON, and XML.",
     tech: ["C#", "ASP.NET Core", "SignalR", "Windows Forms", "SQL Server", "MongoDB"],
     github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
     presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
@@ -49,11 +49,11 @@ export const projects = [
 
 export const skills = {
   Languages: {
-    proficient: ["JavaScript", "C#", "SQL", "Java", "HTML", "CSS"],
+    proficient: ["JavaScript", "C#", "SQL", "Java", "HTML5", "CSS3"],
     familiar: ["TypeScript", "Python"],
   },
   Frameworks: {
-    proficient: ["React", "Node.js", "Express", "ASP.NET Core", "Tailwind CSS", "Bootstrap"],
+    proficient: ["React", "Node.js", "Express", "ASP.NET Core", ".NET", "SignalR", "Tailwind CSS", "Bootstrap"],
     familiar: ["Sails.js"],
   },
   "Databases & Cloud": {
@@ -61,13 +61,21 @@ export const skills = {
     familiar: ["Firebase", "Google Cloud"],
   },
   Tools: {
-    proficient: ["Git", "GitHub", "GitHub Actions", "Vite", "VS Code", "SSMS"],
-    familiar: ["AI-Assisted Development (Claude Code, Gemini)"],
+    proficient: ["Git", "GitHub", "GitHub Actions", "Vitest", "Vercel", "Railway", "Render", "Visual Studio", "Android Studio", "AI-Assisted Development (Claude Code, Gemini)"],
+    familiar: ["Docker"],
+  },
+  Practices: {
+    proficient: ["REST APIs", "OAuth 2.0", "JWT", "Unit Testing", "CI/CD", "Agile/Scrum", "Pull Requests & Code Review"],
+    familiar: [],
+  },
+  "Spoken Languages": {
+    proficient: ["English"],
+    familiar: ["Japanese (conversational)"],
   },
 };
 
 export const current = {
-  building: "Pipeline — adding automated tests & CI",
+  building: "Pipeline — expanding features & test coverage",
   buildingLink: "https://github.com/CrypticWaffles/Pipeline",
   learning: "Software Testing & Project Management",
 };
@@ -77,7 +85,7 @@ export const education = [
     school: "Bellevue College",
     degree: "Bachelor of Applied Science in Software Development",
     dates: "Expected December 2026",
-    notes: "GPA: 3.7 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
+    notes: "GPA: 3.72 · Relevant coursework: Data Structures & Algorithms, Application Architecture, Advanced Web Development, Information Security Essentials, Advanced Data Access Techniques",
   },
   {
     school: "Bellevue College",
