@@ -16,7 +16,7 @@ export const projects = [
     tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "PostgreSQL", "Google OAuth", "JWT"],
     github: "https://github.com/CrypticWaffles/Pipeline",
     demo: "https://pipeline-nu-ecru.vercel.app",
-    /*image: "images/pipeline.png",*/
+    image: "/images/pipeline.png",
   },
   {
     title: "Hospital Management System",
@@ -25,6 +25,7 @@ export const projects = [
     tech: ["C#", "ASP.NET Core", "SignalR", "Windows Forms", "SQL Server", "MongoDB"],
     github: "https://github.com/CrypticWaffles/HospitalManagementSystem",
     presentation: "https://1drv.ms/v/c/b6c0d45c28bc44af/IQDn2q6INyUrSIUVWJ-1AgfQAfOvLuc1tmZIJtCOjTIRFSs?e=jyml0R",
+    image: "/images/HMS.png",
   },
   {
     title: "E-Voter",
@@ -33,7 +34,7 @@ export const projects = [
     tech: ["Sails.js", "Node.js", "EJS", "Bootstrap"],
     github: "https://github.com/CrypticWaffles/E-Voter",
     demo: "https://e-voter-5tp3.onrender.com",
-    /*image: "images/evoter.png",*/
+    image: "/images/evoter.png",
   },
   {
     title: "Queued",
@@ -42,7 +43,7 @@ export const projects = [
     tech: ["SQLite", "Java", "Android", "TVmaze API"],
     github: "https://github.com/CrypticWaffles/Queued",
     demo: "https://appetize.io/app/b_6pdork34eiaei2tu6cignrfbgi",
-    /*image: "images/queued.png",*/
+    image: "/images/Queued.jpg",
   },
 ];
 
